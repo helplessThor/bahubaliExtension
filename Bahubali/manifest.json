@@ -1,0 +1,44 @@
+{
+	"name": "Jiyo re Bahubali",
+	 "description": "Play jiyo re bahubali sound once a solution is accepted in Hackerrank",
+	 "version": "1.0",
+	 "manifest_version": 3,
+	   "background": {
+    "service_worker": "background.js"
+  },
+	  "permissions": ["storage", "activeTab", "scripting", "alarms"],
+	  "web_accessible_resources": [
+	    {"resources": ["bahubali.mp3"], "matches": ["https://*.hackerrank.com/*"]}
+	  ],
+	  "content_scripts": [
+			{
+				"matches": ["https://*.hackerrank.com/*"],
+				"js": ["content.js"]
+			}
+		]
+}
+
+
+
+// {
+// 	"manifest_version": 2,
+// 	"name": "Believe in yourself",
+// 	"version": "0.3.0",
+// 	"permissions": [
+// 		"storage",
+// 		"https://*.hackerrank.com/*"
+// 	],
+// 	"content_scripts": [
+// 		{
+// 			"matches": [
+// 				"https://*.hackerrank.com/*"
+// 			],
+// 			"js": [
+// 				"content.js"
+// 			]
+// 		}
+// 	],
+// 	"web-accessible-resources": [
+// 		"*.mp3"
+// 	]
+// }
