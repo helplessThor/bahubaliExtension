@@ -17,28 +17,3 @@
 			}
 		]
 }
-
-
-
-// {
-// 	"manifest_version": 2,
-// 	"name": "Believe in yourself",
-// 	"version": "0.3.0",
-// 	"permissions": [
-// 		"storage",
-// 		"https://*.hackerrank.com/*"
-// 	],
-// 	"content_scripts": [
-// 		{
-// 			"matches": [
-// 				"https://*.hackerrank.com/*"
-// 			],
-// 			"js": [
-// 				"content.js"
-// 			]
-// 		}
-// 	],
-// 	"web-accessible-resources": [
-// 		"*.mp3"
-// 	]
-// }
