@@ -1,6 +1,6 @@
 
 
-function bahubali(){
+function triggerSuccess(){
     let runButton = document.querySelectorAll('button, .ui-btn')[5];
     console.log(runButton);
     runButton.addEventListener('click', () => {
@@ -26,6 +26,6 @@ window.addEventListener('load', ()=>{
     setTimeout(
         function() 
         {
-            bahubali();
+            triggerSuccess();
         }, 1000);
 });
